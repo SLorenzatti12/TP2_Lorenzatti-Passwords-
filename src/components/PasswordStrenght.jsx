@@ -11,8 +11,8 @@ function PasswordStrength({ password }) {
     if (/[^A-Za-z0-9]/.test(password)) score++;
 
     if (score <= 1) return { label: "Poco segura", className: "strength-weak" };
-    if (score === 2 || score === 3) return { label: "Segura", className: "strength-medium" };
-    return { label: "Muy segura", className: "strength-strong" };
+    if (score === 2) return { label: "Segura", className: "strength-medium" };
+    if (score >= 3) return { label: "Muy segura", className: "strength-strong" };
   };
 
   const { label, className } = getStrength();
