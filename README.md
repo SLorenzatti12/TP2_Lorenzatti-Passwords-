@@ -1,12 +1,19 @@
-# React + Vite
+# 🔐 Aplicación de Fortaleza de Contraseña
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto fue desarrollado como trabajo práctico para la materia **Desarrollo de Software** de la UTN.  
+La aplicación permite evaluar la fortaleza de una contraseña y ofrece herramientas adicionales para la generación y copia de contraseñas.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Funcionalidades
 
-## Expanding the ESLint configuration
+- Ingreso de contraseña con visibilidad alternable (mostrar/ocultar)
+- Evaluación automática de la fortaleza:
+  - Poco segura
+  - Segura
+  - Muy segura
+- Generador automático de contraseñas **muy seguras**
+- Botón para copiar la contraseña al portapapeles
+- Mensaje de confirmación al copiar (desaparece luego de 3 segundos)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
