@@ -1,18 +1,25 @@
-import React from 'react';
+import React from "react";
 
 function PasswordStrength({ password }) {
   const getStrength = () => {
-    if (password.length < 6) return "Poco segura";
-    if (/[a-z]/.test(password) && /[A-Z]/.test(password) && /\d/.test(password)) {
-      if (password.length >= 12) return "Muy segura";
-      return "Segura";
-    }
-    return "Poco segura";
+    if (!password) return { label: "", className: "" };
+
+    let score = 0;
+    if (password.length >= 8) score++;
+    if (/[A-Z]/.test(password)) score++;
+    if (/[0-9]/.test(password)) score++;
+    if (/[^A-Za-z0-9]/.test(password)) score++;
+
+    if (score <= 1) return { label: "Poco segura", className: "strength-weak" };
+    if (score === 2 || score === 3) return { label: "Segura", className: "strength-medium" };
+    return { label: "Muy segura", className: "strength-strong" };
   };
 
+  const { label, className } = getStrength();
+
   return (
-    <div className="password-strength">
-      <strong>Seguridad:</strong> {getStrength()}
+    <div className={`password-strength ${className}`}>
+      {label && <>Fortaleza: <span>{label}</span></>}
     </div>
   );
 }
