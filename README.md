@@ -17,3 +17,11 @@ La aplicación permite evaluar la fortaleza de una contraseña y ofrece herramie
 - Mensaje de confirmación al copiar (desaparece luego de 3 segundos)
 
 ---
+## ▶️ Probar la aplicación
+
+Podés probar la aplicación online en el siguiente enlace:  
+👉 **[https://quiet-dango-e17374.netlify.app](https://quiet-dango-e17374.netlify.app)**
+
+El link al repositorio es el siguiente:
+👉 **[https://github.com/SLorenzatti12/TP2_Lorenzatti-Passwords-]**
+
